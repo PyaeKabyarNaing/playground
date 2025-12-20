@@ -1,0 +1,179 @@
+.kdot{
+    position: relative;
+    width: 127px;
+    height: 240px;
+    left: 100px;
+    /* left: 15%; */
+    top: 320px;
+    /* transform: rotate(-20deg); */
+    transform-origin: bottom left;
+}
+
+.kmove{
+    animation: kmove 1.5s infinite;
+}
+
+@keyframes kmove {
+    0% { top: 320px; transform: rotate(-10deg); }
+    50% { top: 310px; transform: rotate(0deg);}
+    100% { top: 320px; transform: rotate(-10deg); }
+}
+
+.reverse{
+    transform: scaleX(-1);
+}
+
+.kmic-sing{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    left: 89px;
+    top: 10px;
+    transform: rotate(0deg);
+}
+.kmic-hold{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    left: 76px;
+    top: 30px;
+    transform: rotate(10deg);
+}
+
+.khand1{
+    position: absolute;
+    /* width: 204px;
+    height: 148px; */
+    width: 68px;
+    height: 49.3px;
+    left: 42px;
+    top: 24px;
+    z-index: 1;
+    transform-origin: top left;
+    transform: rotate(25deg);
+}
+
+.khand1sing{
+    position: absolute;
+    /* width: 204px;
+    height: 148px; */
+    width: 68px;
+    height: 49.3px;
+    left: 42px;
+    top: 24px;
+    z-index: 1;
+    transform-origin: top left;
+    transform: rotate(0deg);
+}
+
+.khandwave{
+    animation: handwave 2s infinite;
+}
+
+@keyframes handwave {
+    0% { transform: rotate(20deg); }
+    100% { transform: rotate(20deg); }
+}
+
+.khand2{
+    position: absolute;
+    /* width: 422px;
+    height: 196px; */
+    width: 94px;
+    height: 44px;
+    left: 85px;
+    top: 35px;
+    z-index: -1;
+    transform-origin: right;
+}
+
+.kleg1{
+    position: absolute;
+    width: 127px;
+    height: 240px;
+}
+
+.kleg2{
+    position: absolute;
+    width: 127px;
+    height: 240px;
+}
+
+.kfull{
+    position: absolute;
+    width: 127px;
+    height: 240px;
+}
+.kbody{
+    position: absolute;
+    width: 127px;
+    height: 240px;
+}
+
+.kbody1{
+    position: absolute;
+    width: 127px;
+    height: 240px;
+}
+
+.khead{
+    position: absolute;
+    /* width: 78px;
+    height: 97.6px; */
+    width: 97.5px;
+    height: 122px;
+    left: 30px;
+    top: -60px;
+    z-index: -1;
+    /* animation: kheadwave 1s infinite; */
+}
+
+@keyframes kheadwave {
+    0% { top: -65px; }
+    50% { top: -60px; }
+    100% { top: -65px; }
+}
+
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.stage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    height: 750px;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.hidden{
+    display: none;
+}
