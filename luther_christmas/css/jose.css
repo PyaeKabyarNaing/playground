@@ -1,0 +1,49 @@
+.jose{
+    position: absolute;
+    width: 70px;
+    height: 160px;
+    right: 100px;
+    bottom: 30px;
+}
+.jhand1{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    left: -5px;
+    top: -75px;
+    transform-origin: bottom;
+    transform: rotate(-20deg);
+    z-index: 1;
+}
+.jhand2{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    left: 30px;
+    top: -40px;
+    transform-origin: bottom;
+    z-index: 1;
+    transform-origin: bottom;
+}
+.jhandwave{
+    animation: jhandwave 1s infinite ;
+}
+
+@keyframes jhandwave {
+    0% { transform: rotate(-25deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(-25deg); }
+}
+.jhead{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: -95px;
+    left: -15px;
+}
+.jbody{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    z-index: 2;
+}

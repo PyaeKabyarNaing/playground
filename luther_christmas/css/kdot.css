@@ -1,0 +1,213 @@
+.kdot{
+    position: absolute;
+    width: 70px;
+    height: 160px;
+    left: -150px;
+    bottom: 50px;
+    z-index: 20;
+}
+.kplace{
+    left: 150px;
+}
+.kslide{
+    animation: kslide 4s linear;
+}
+@keyframes kslide{
+    from{left: -150px}
+    to{left: 150px}
+}
+.khand{
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: -60px;
+}
+#khand1{
+    left: 45px;
+}
+#khand2{
+    left: -55px;
+}
+.ksing{
+    transform: rotate(50deg);
+    left: -55px;
+}
+.khold{
+    left: -60px;
+}
+.kdothand1{
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    top: -100px;
+    transform-origin: bottom;
+    z-index: 4;
+}
+.khand1{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    /* top: -95px; */
+    transform-origin: bottom;
+    z-index: 1;
+}
+.kfinger1{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    top: -13px;
+    transform: rotate(-30deg);
+    z-index: 2;
+}
+@keyframes khandmove{
+    0%{transform: rotate(20deg)}
+    50%{transform: rotate(-30deg)}
+    100%{transform: rotate(20deg)}
+}
+.khandwave{
+    animation: khandmove 1s infinite;
+}
+.kdothand2{
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    left: 80px;
+    top: -100px;
+    transform-origin: bottom;
+    z-index: 4;
+    animation: khandmove 1s infinite;
+}
+.kfinger2{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    top: -30px;
+}
+.kbody{
+    position: absolute;
+    width: 60px;
+    height: auto;
+    top: -70px;
+    left: -5px;
+    z-index: 2;
+}
+@keyframes knod{
+    0%{top: 0px}
+    50%{top: 10px}
+    100%{top: 0px}
+}
+.knod{
+    animation: knod .5s infinite;
+}
+.khood{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    top: -150px;
+    left: -5px;
+    z-index: 4;
+}
+.kface{
+    position: absolute;
+    width: 83px;
+    height: auto;
+    top: -143px;
+    left: -2px;
+    z-index: 3;
+}
+.khead{
+    position: absolute;
+    left: -10px;
+}
+.hoodHead{
+    position: absolute;
+    width: 95px;
+    height: auto;
+    top: -100px;
+    left: -20px;
+    z-index: 3;
+}
+.kleg{
+    position: absolute;
+    width: 65px;
+    height: auto;
+    top: 5px;
+    left: -6px;
+    z-index: 1;
+}
+.shoe{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 95px;
+}
+#shoe1{
+    left: -5px;
+    animation: kshoe1move .8s infinite;
+}
+#shoe2{
+    left: 35px;
+    animation: kshoe2move .8s infinite;
+    /* transform: scaleX(-1); */
+}
+@keyframes kshoe1move{
+    0%{transform: scaleX(1);}
+    50%{transform: scaleX(-1); left: -10px;}
+    100%{transform: scaleX(1);}
+}
+@keyframes kshoe2move{
+    0%{transform: scaleX(1);}
+    50%{transform: scaleX(-1); left: 30px;}
+    100%{transform: scaleX(1);}
+}
+.mic{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    left: 5px;
+    top: -35px;
+    transform: rotate(60deg);
+}
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    height: 750px;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.hidden{
+    display: none;
+}
