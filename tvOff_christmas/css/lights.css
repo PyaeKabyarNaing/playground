@@ -1,0 +1,181 @@
+@keyframes glow{
+    0% { opacity: 1; }
+    25%{ opacity:.7; }
+    50%{ opacity:0; }
+    75%{ opacity:.8; }
+    100%{ opacity:1; }
+}
+.glow{
+    animation: glow 2s infinite ease-in-out;
+}
+
+@keyframes glitch{
+    0% { opacity: 1; }
+    25%{ opacity:.7; }
+    50%{ opacity:0; }
+    75%{ opacity:.8; }
+    100%{ opacity:1; }
+}
+.glitch{
+    animation: glitch 0.15s infinite;
+}
+
+.lights{
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    top: 50px;
+}
+.bulbs{
+    position: absolute;
+    width: 1500px;
+    height: auto;
+}
+.red{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 10px 10px red;
+    z-index: 1;
+    border-radius: 100%;
+}
+.blue{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 10px 10px blue;
+    z-index: 1;
+    border-radius: 100%;
+}
+.green{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 10px 10px green;
+    z-index: 1;
+    border-radius: 100%;
+}
+.yellow{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 10px 10px yellow;
+    z-index: 1;
+    border-radius: 100%;
+}
+.pink{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 10px 10px deeppink;
+    z-index: 1;
+    border-radius: 100%;
+}
+.purple{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 10px 10px purple;
+    z-index: 1;
+    border-radius: 100%;
+}
+#red1{
+    left: 14px;
+    top: 65px;
+}
+#blue1{
+    left: 68px;
+    top: 90px;
+}
+#green1{
+    left: 122px;
+    top: 60px;
+}
+#yellow1{
+    left: 196px;
+    top:90px;
+}
+#pink1{
+    left: 273px;
+    top: 80px;
+}
+#purple1{
+    left: 333px;
+    top: 55px;
+}
+
+#red2{
+    left: 399px;
+    top: 82px;
+}
+#blue2{
+    left: 463px;
+    top: 52px;
+}
+#green2{
+    left: 530px;
+    top: 65px;
+}
+#yellow2{
+    left: 590px;
+    top: 50px;
+}
+#pink2{
+    left: 655px;
+    top: 37px;
+}
+#purple2{
+    left: 722px;
+    top: 65px;
+}
+
+#red3{
+    left: 780px;
+    top: 80px;
+}
+#blue3{
+    left: 833px;
+    top: 105px;
+}
+#green3{
+    left: 885px;
+    top: 75px;
+}
+#yellow3{
+    left: 960px;
+    top: 105px;
+}
+#pink3{
+    left: 1038px;
+    top: 95px;
+}
+#purple3{
+    left: 1100px;
+    top: 70px;
+}
+
+#red4{
+    left: 1165px;
+    top: 95px;
+}
+#blue4{
+    left: 1230px;
+    top: 65px;
+}
+#green4{
+    left: 1295px;
+    top: 80px;
+}
+#yellow4{
+    left: 1355px;
+    top: 65px;
+}
+#pink4{
+    left: 1420px;
+    top: 55px;
+}
+#purple4{
+    left: 1487px;
+    top: 80px;
+}
